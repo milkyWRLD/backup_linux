@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Галерея без обработки</title>
+		<link rel="stylesheet" href="style_video.css" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="index.html">Резюме</a></li>
+					<li><a href="gallery.html">Исходные фото</a></li>
+					<li><a href="gallery2.html">Обработанные фото</a></li>
+					<li><a href="cartoon.html">Мультфильмы</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="video-grid">
+			<!-- Блок для каждого видео -->
+			<div class="grid-item">
+				<video controls>
+					<source src="VideoIn/1.mp4" type="video/mp4" />
+				</video>
+			</div>
+			<div class="grid-item">
+				<video controls>
+					<source src="VideoIn/2.mp4" type="video/mp4" />
+				</video>
+			</div>
+			<div class="grid-item">
+				<video controls>
+					<source src="VideoIn/3.mp4" type="video/mp4" />
+				</video>
+			</div>
+			<div class="grid-item">
+				<video controls>
+					<source src="VideoIn/4.mp4" type="video/mp4" />
+				</video>
+			</div>
+			<div class="grid-item">
+				<video controls>
+					<source src="VideoIn/5.mp4" type="video/mp4" />
+				</video>
+			</div>
+			<div class="grid-item">
+				<video controls>
+					<source src="VideoIn/6.mp4" type="video/mp4" />
+				</video>
+			</div>
+			<div class="grid-item">
+				<video controls>
+					<source src="VideoIn/7.mp4" type="video/mp4" />
+				</video>
+			</div>
+			<div class="grid-item">
+				<video controls>
+					<source src="VideoIn/8.mp4" type="video/mp4" />
+				</video>
+			</div>
+		</div>
+		<script>
+			function openVideo(src) {
+				const videoFullContainer = document.getElementById(
+					'image-full-container'
+				)
+				const videoFull = document.getElementById('image-full')
+
+				videoFull.src = src
+				videoFullContainer.style.display = 'flex'
+			}
+
+			function closeVideo() {
+				const videoFullContainer = document.getElementById(
+					'image-full-container'
+				)
+				videoFullContainer.style.display = 'none'
+			}
+		</script>
+	</body>
+</html>
